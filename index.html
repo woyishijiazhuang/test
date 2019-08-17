@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			#header{
+				height: 120px;
+				margin: 0px;
+				padding: 10px;
+				overflow: hidden;
+				background-image: linear-gradient(to right bottom,#F6D8CE,#FF4000);
+			}
+			#header img{
+				vertical-align:middle;
+				width: 100px;
+				height: 100px;
+				border-radius: 18px;
+			}
+			#header span{
+				font-size: 80px;
+				line-height: 80px;
+				vertical-align:middle;
+			}
+			#bodyer{
+				background-image: linear-gradient(to right bottom,#87CEFA,#1E90FF);
+				border: 2px solid none;
+				color: white;
+				/*background-image: linear-gradient(to bottom,#F6D8CE,#FF4000);*/
+			}
+			#bodyer img{
+				vertical-align:middle;
+				width: 100px;
+				height: 100px;
+				border-radius: 18px;
+			}
+			.people{	
+				
+			}
+			.people div{
+				display: inline-block;
+				vertical-align:middle;
+				/*border: 2px solid red;*/
+				padding: 0;
+			}
+			.t1{
+				height: 150px;
+				width:150px;
+				margin: 15px;
+				border-radius: 50%;
+			}
+			.t2 span{
+				line-height: 90px;
+				font-size: 50px;
+				margin: 20px;
+			}
+			.t3{
+				width: 10%;
+				overflow: hidden;
+				float: right;
+				font-size: 100px;
+				color: black;
+				line-height: 180px;
+			}
+			.show{
+				height: 0px;
+				overflow: hidden;
+				border-top: 2px solid black;
+				border-bottom: 2px solid black;
+				background: #84a3af;
+			}
+			.show span{
+				margin-left: 20px;
+				line-height: 50px;
+				font-size: 30px;
+			}
+			#footer{
+				text-align: center;
+				font-size: 40px;
+			}
+		</style>
+		<script>
+			function show(id){
+				var doc  = document.getElementById(id).style;
+				if(doc.height == ""){doc.height = "auto"}else{doc.height = ""}				
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div style="float: left;">
+				<img src="img/舰团头像.jpg" />
+				<span><b>崩坏</b><sub style="font-size: 30px;color: #3e3e3e;">舰团</sub></span>
+			</div>
+			<div style="float: right;padding: 5px;width: 30%;">
+				<span style="line-height: 30px;font-size: 25px;">舰团ID:<i>13000832</i></span><br />
+				<span style="line-height: 30px;font-size: 25px;">创建日期:<i>2019-8-4</i></span><br />
+				<span style="line-height: 30px;font-size: 25px;">舰团长:<i>假装</i></span><br />	
+			</div>
+		</div>
+		<div id="bodyer">
+			<div>
+			<div class="people">
+				<div class="t1" style="background-image: url(img/QQ图片1.jpg);background-size: 100%;"></div>
+				<div class="t2">
+					<span>昵称:假装</span><br />
+					<span>uid:200039205</span>
+				</div>
+				<div class="t3"  onclick='show("s1")'>▼</div>
+			</div>
+			<div class="show" id="s1" >
+				<span>职位:<i>团长</i></span><br />
+				<span>状态:<i>活跃</i></span><br />
+			</div>
+			</div>
+			
+			<div>
+			<div class="people">
+				<div class="t1" style="background-image: url(img/QQ图片2.jpg);background-size: 100%;"></div>
+				<div class="t2">
+					<span>昵称:剑神超大人</span><br />
+					<span>uid:200033214</span>
+				</div>
+				<div class="t3" onclick='show("s2")'>▼</div>
+			</div>
+			<div class="show" id="s2" >
+				<span>职位:<i>副官</i></span><br />
+				<span>状态:<i>活跃</i></span><br />
+				<span>标签1:<i>待定</i></span><br />
+				<span>标签2:<i>待定</i></span><br />
+			</div>
+			</div>
+			<div>
+			<div class="people">
+				<div class="t1" style="background-image: url(img/QQ图片3.jpg);background-size: 100%;"></div>
+				<div class="t2">
+					<span>昵称:萌萌萌新</span><br />
+					<span>uid:200173630</span>
+				</div>
+				<div class="t3" onclick='show("s3")'>▼</div>
+			</div>
+			<div class="show" id="s3" >
+				<span>职位:<i>副官</i></span><br />
+				<span>状态:<i>活跃</i></span><br />
+				<span>标签1:<i>待定</i></span><br />
+				<span>标签2:<i>待定</i></span><br />
+			</div>
+			</div>
+			<div>
+			<div class="people">
+				<div class="t1" style="background-image: url(img/QQ图片4.jpg);background-size: 100%;"></div>
+				<div class="t2">
+					<span>昵称:啊我死了</span><br />
+					<span>uid:200112424</span>
+				</div>
+				<div class="t3" onclick='show("s4")'>▼</div>
+			</div>
+			<div class="show" id="s4" >
+				<span>职位:<i>副官</i></span><br />
+				<span>状态:<i>活跃</i></span><br />
+				<span>标签1:<i>待定</i></span><br />
+				<span>标签2:<i>待定</i></span><br />
+			</div>
+			</div>
+		</div>
+		<div id="footer">
+			<br />
+			<span>群号:164602196</span>
+			<br />
+			<br />
+		</div>
+	</body>
+</html>
